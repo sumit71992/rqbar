@@ -1,0 +1,133 @@
+$background: #dff6ff;
+$head-text: #06283d;
+$sky-bg: #332fff;
+
+body {
+  background-color: $background !important;
+  .social-bg {
+    background-image: linear-gradient(to left, $sky-bg, #47b5ff);
+    .i {
+      font-size: 1.7rem;
+      margin-right: 0.5rem;
+    }
+    .span-au {
+      margin-left: 3rem;
+    }
+  }
+  .navbar {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    border-bottom: solid rgba(255, 255, 255, 0.534) 1px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .ms {
+    margin-left: 12%;
+  }
+  .bg-image {
+    background-image: url("https://img.freepik.com/free-vector/law_1284-19049.jpg?size=626&ext=jpg&ga=GA1.2.1233100574.1641480521");
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(11, 83, 117, 0.562);
+      content: " ";
+    }
+  }
+  .rel {
+    position: relative;
+  }
+  .alignment {
+    padding: 0.5rem 7rem 0.5rem 7rem;
+  }
+  .transparent {
+    background: transparent;
+  }
+  .line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: white;
+  }
+  footer {
+    background-color: $head-text;
+    color: white;
+    .content {
+      display: grid;
+      grid-template-columns: 1.7fr 1fr 1fr 1fr;
+      .about,
+      .quick-links,
+      .services,
+      .contact {
+        margin-top: 7rem;
+      }
+      .text {
+        padding: 1rem 1rem 1rem 0;
+        p {
+          color: rgba(255, 255, 255, 0.253);
+        }
+      }
+      .link-text a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: white;
+        line-height: 2rem;
+        &:hover {
+          color: $sky-bg;
+        }
+      }
+    }
+    .social-media {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .touch {
+    padding: 4rem;
+    background-image: linear-gradient(to right, #5a3f37, #2c7744);
+    border-radius: 10px;
+    transform: translate(0%, 50%);
+    .contact-btn {
+      button {
+        background-color: $background;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        color: $head-text;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 701px) {
+  .social-header {
+    display: none !important;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.active {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}

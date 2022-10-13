@@ -1,0 +1,126 @@
+body {
+  background-color: #dff6ff !important;
+}
+body .social-bg {
+  background-image: linear-gradient(to left, #332fff, #47b5ff);
+}
+body .social-bg .i {
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+}
+body .social-bg .span-au {
+  margin-left: 3rem;
+}
+body .navbar {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  border-bottom: solid rgba(255, 255, 255, 0.534) 1px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+body .ms {
+  margin-left: 12%;
+}
+body .bg-image {
+  background-image: url("https://img.freepik.com/free-vector/law_1284-19049.jpg?size=626&ext=jpg&ga=GA1.2.1233100574.1641480521");
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+}
+body .bg-image:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(11, 83, 117, 0.562);
+  content: " ";
+}
+body .rel {
+  position: relative;
+}
+body .alignment {
+  padding: 0.5rem 7rem 0.5rem 7rem;
+}
+body .transparent {
+  background: transparent;
+}
+body .line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+}
+body footer {
+  background-color: #06283d;
+  color: white;
+}
+body footer .content {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr;
+}
+body footer .content .about,
+body footer .content .quick-links,
+body footer .content .services,
+body footer .content .contact {
+  margin-top: 7rem;
+}
+body footer .content .text {
+  padding: 1rem 1rem 1rem 0;
+}
+body footer .content .text p {
+  color: rgba(255, 255, 255, 0.253);
+}
+body footer .content .link-text a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  line-height: 2rem;
+}
+body footer .content .link-text a:hover {
+  color: #332fff;
+}
+body footer .social-media span {
+  font-size: 2rem;
+}
+body .heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body .touch {
+  padding: 4rem;
+  background-image: linear-gradient(to right, #5a3f37, #2c7744);
+  border-radius: 10px;
+  transform: translate(0%, 50%);
+}
+body .touch .contact-btn button {
+  background-color: #dff6ff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: #06283d;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+}
+
+@media only screen and (max-width: 701px) {
+  .social-header {
+    display: none !important;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}/*# sourceMappingURL=index.css.map */
